@@ -54,6 +54,8 @@ body{
     color: black;
 }
 
+
+/*https://www.youtube.com/watch?v=jV8B24rSN5o*/
 .current-card-div {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
@@ -64,66 +66,184 @@ body{
 
 .aatrox{
     background-image: linear-gradient(
-    to bottom, transparent,#262626
+    to bottom, transparent, #404040
     ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/aatrox.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    background-size: cover;
+}
+
+.traits {
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    flex-direction: column;
+}
+
+.name-coin{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    background-color: #8c8c8c;
 }
 
 
 .gragas{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/gragas.jpg");
+    background-image:linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/gragas.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
-
 
 .leona{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/leona.jpg");
+    background-image:linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/leona.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 .kalista{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/kalista.jpg");
+    background-image: linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/kalista.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 
 .khazix {
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/khazix.jpg");
+    background-image: linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/khazix.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 
 .kled{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/kled.jpg");
+    background-image:  linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/kled.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 .lissandra{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/lissandra.jpg");
+    background-image: linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/lissandra.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 .poppy{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/poppy.jpg");
+    background-image: linear-gradient(
+            to bottom, transparent, #404040
+    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/poppy.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 
 .udyr{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/udyr.jpg");
+    background-image: linear-gradient(
+            to bottom, transparent, #404040
+    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/udyr.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 
 .vayne{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vayne.jpg");
+    background-image: linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vayne.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 
 .warwick{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/warwick.jpg");
+    background-image: linear-gradient(
+            to bottom, transparent, #404040
+    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/warwick.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 
 .ziggs{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/ziggs.jpg");
+    background-image:linear-gradient(
+            to bottom, transparent, #404040
+    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/ziggs.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
 
 .vladimir{
-    background-image: url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vladimir.jpg");
+    background-image:linear-gradient(
+            to bottom, transparent, #404040
+    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vladimir.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    background-size: cover;
 }
