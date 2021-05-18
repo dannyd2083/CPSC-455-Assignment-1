@@ -247,3 +247,63 @@ body{
     font-size: 1.6rem;
     background-size: cover;
 }
+
+.addCard-div{
+    padding-bottom: 20px;
+    border-bottom: 15px double #737373;
+}
+
+.card-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+input{
+    margin-right: 20px;
+    background-color: cadetblue;
+}
+
+input[type=submit],input[type=reset],input[type=button]{
+    color: white;
+    width: 100px;
+    height: 25px;
+    background: mediumseagreen;
+    border: 0 none;
+    cursor: pointer;
+}
+#sub-img:hover {
+    background: white;
+    color:mediumseagreen;
+}
+
+#reset-form:hover {
+    background: white;
+    color:mediumseagreen;
+}
+
+#DeleteAll{
+    margin-left: 15px;
+}
+
+#DeleteAll:hover{
+    background: white;
+    color:mediumseagreen;
+}
+
+
+@media (max-width: 1800px) {
+    .card-form input {
+        margin: 10px 0;
+    }
+
+    .card-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
