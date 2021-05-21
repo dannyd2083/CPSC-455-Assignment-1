@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="home.css">
     <title> TFT Trading Card </title>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 
     <div class="addCard-div">
         <h2>Add Card</h2>
-       <form class="card-form">
+       <form id ="userInput" class="card-form">
            <label for="Name">Name:</label>
            <input type="text" id="Name" name="name">
            <label for="Traits">Traits:</label>
@@ -38,25 +39,38 @@
            <input type="number" id="Price" name="price" min="1" max="5">
            <label for="URL"> Image URL: </label>
            <input type="url" id="URL" name="url">
-           <input type="submit" value="Submit" id ="sub-img">
+           <input type="submit" value="Submit" id ="submit">
            <input type ="reset" id ="reset-form">
            <label for="DeleteAll" id="DeleteAllLabel">Delete All Card:</label>
            <input type="button" value="delete" id ="DeleteAll">
        </form>
-        <span>
-
-        </span>
+        <script src="js/userInteract.js"></script>
     </div>
 
+    <! -- template -->
+    <div style="display: none" data-type = "template" class="anotherCard">
+        <div class="traits">
+            <strong style="font-size: 1.6rem; font-family:Verdana">Traits:</strong>
+        </div>
+        <div class="name-coin">
+            <span class="card-name"> Card-name </span>
+            <div class="coin">
+                <img src="coin.png" width="20" height="20">
+                1
+            </div>
+        </div>
+    </div>
+
+
     <h2>Current Card</h2>
-    <div class="current-card-div">
+    <div class="current-card-div" id ="current-card-list">
         <div class="aatrox">
             <div class="traits">
                 <strong style="font-size: 1.6rem; font-family:Verdana">Traits:</strong>
-                <div class= "aatrox-traits1">
+                <div class= "traits1">
                     Redeemed
                 </div>
-                <div class= "aatrox-traits2">
+                <div class= "traits2">
                     Legionnaire
                 </div>
             </div>
@@ -235,7 +249,7 @@
                 <span class="vayne-name"> Vayne </span>
                 <div class="coin">
                     <img src="coin.png" width="20" height="20">
-                    1
+                     1
                 </div>
             </div>
         </div>
@@ -289,7 +303,7 @@
                 </div>
             </div>
             <div class="name-coin">
-                <span class="khazix-name"> Kha'Zix </span>
+                <span class="ziggs-name"> Ziggs </span>
                 <div class="coin">
                     <img src="coin.png" width="20" height="20">
                     1
