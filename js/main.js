@@ -34,8 +34,12 @@ initialCardArray.push(aatrox,gragas,leona,kalista,khazix,kled,lissandra,poppy,ud
 console.log(aatrox,gragas,leona,kalista,khazix,kled,lissandra,poppy,udyr,vayne,vladimir,warwick,ziggs);
 
 
+// https://stackoverflow.com/questions/48722545/how-do-i-check-if-an-element-div-is-empty-without-jquery-but-with-javascript
+// trim ensure if there is a whitespace it wont affect the function
 document.getElementById("Reload").addEventListener("click", function() {
-    resetInitialCard();
+    if(document.getElementById("current-card-list").innerHTML.trim().length == 0){
+        resetInitialCard();
+    }
 });
 
 
@@ -48,7 +52,7 @@ function resetInitialCard(){
         for (let i=0; i < card['Traits'].length; i++) {
             let newTrait = document.createElement('div');
             newTrait.className = "traits" + (i+1);
-            newTrait.textContent = cardAddedTraits[i];
+            newTrait.textContent = card['Traits'][i];
             traitDiv.appendChild(newTrait);
         }
 
@@ -56,8 +60,15 @@ function resetInitialCard(){
         let name = nameCoinDiv.querySelector(".card-name");
         name.setAttribute("class",card['name']+"-name");
         name.textContent = card['name'];
+
         let coin = nameCoinDiv.querySelector(".coin");
-        coin.childNodes[1] = card['Price'];
+        coin.innerHTML = '';
+        let coinIcon = document.createElement("img");
+        coinIcon.setAttribute('src','coin.png');
+        coinIcon.setAttribute('width','20');
+        coinIcon.setAttribute('height', '20');
+        coin.appendChild(coinIcon);
+        coin.innerHTML += card['Price'];
 
         tempNode.removeAttribute("style");
         tempNode.removeAttribute("data-type");

@@ -34,15 +34,11 @@ function addCard (){
 
     console.log(currentCard);
 
+    //clone a template then edit it
     let tempNode = document.querySelector("div[data-type='template']").cloneNode(true);
 
-    console.log(tempNode);
-
+    //Deal with the Traits
     let traitDiv = tempNode.querySelector(".traits");
-
-    console.log(traitDiv);
-    console.log(cardAddedTraits.length);
-
     for (let i=0; i < cardAddedTraits.length; i++) {
         console.log("into the loop");
         let newTrait = document.createElement('div');
@@ -51,17 +47,29 @@ function addCard (){
         traitDiv.appendChild(newTrait);
     }
 
-    console.log(traitDiv);
-
+    //====================
+    //Coin and Name
     let nameCoinDiv = tempNode.querySelector(".name-coin");
     let name = nameCoinDiv.querySelector(".card-name");
     name.setAttribute("class",cardAddedName+"-name");
     name.textContent = cardAddedName;
-    let coin = nameCoinDiv.querySelector(".coin");
-    coin.childNodes[1] = cardAddedPrice;
 
+
+    //deal with the price tag,delete the original one entirely then create new one
+    let coin = nameCoinDiv.querySelector(".coin");
+    coin.innerHTML = '';
+    let coinIcon = document.createElement("img");
+    coinIcon.setAttribute('src','coin.png');
+    coinIcon.setAttribute('width','20');
+    coinIcon.setAttribute('height', '20');
+    coin.appendChild(coinIcon);
+    coin.innerHTML += cardAddedPrice;
+
+    //Replace the redundant from the template
     tempNode.removeAttribute("style");
     tempNode.removeAttribute("data-type");
+
+    //set the new div name and the background, since the style can't inherit from css somehow
     tempNode.setAttribute("class", cardAddedName);
     tempNode.style.background = 'url('+cardAddedURL+')';
     tempNode.style.backgroundRepeat = "no-repeat";
