@@ -11,7 +11,7 @@ let udyrString = '{"name": "Udyr", "Traits": ["Draconic", "Skirmisher"], "Price"
 let vayneString = '{"name": "Vayne", "Traits": ["Forgotten", "Ranger"], "Price": "1", "URL": "https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vayne.jpg"}';
 let vladimirString = '{"name": "Vladimir", "Traits": ["Nightbringer", "Renewer"], "Price": "1", "URL": "https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vladimir.jpg"}';
 let warwickString = '{"name": "Warwick", "Traits": ["Forgotten", "Brawler"], "Price": "1", "URL": "https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/warwick.jpg"}';
-let ziggsString = '{"name": "Ziggs", "Traits": ["Dawnbringer", "Assassin"], "Price": "1", "URL": "https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/Ziggs.jpg"}';
+let ziggsString = '{"name": "Ziggs", "Traits": ["Dawnbringer", "Assassin"], "Price": "1", "URL": "https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/ziggs.jpg"}';
 
 let aatrox = JSON.parse(aatroxString);
 let gragas = JSON.parse(gragasString);
@@ -27,7 +27,47 @@ let vladimir = JSON.parse(vladimirString);
 let warwick = JSON.parse(warwickString);
 let ziggs = JSON.parse(ziggsString);
 
+let initialCardArray = []
+
+initialCardArray.push(aatrox,gragas,leona,kalista,khazix,kled,lissandra,poppy,udyr,vladimir,warwick,ziggs)
+
 console.log(aatrox,gragas,leona,kalista,khazix,kled,lissandra,poppy,udyr,vayne,vladimir,warwick,ziggs);
 
+
+document.getElementById("Reload").addEventListener("click", function() {
+    resetInitialCard();
+});
+
+
+function resetInitialCard(){
+    for (let card of initialCardArray) {
+        let currentCard = document.getElementById("current-card-list");
+        let tempNode = document.querySelector("div[data-type='template']").cloneNode(true);
+        let traitDiv = tempNode.querySelector(".traits");
+
+        for (let i=0; i < card['Traits'].length; i++) {
+            let newTrait = document.createElement('div');
+            newTrait.className = "traits" + (i+1);
+            newTrait.textContent = cardAddedTraits[i];
+            traitDiv.appendChild(newTrait);
+        }
+
+        let nameCoinDiv = tempNode.querySelector(".name-coin");
+        let name = nameCoinDiv.querySelector(".card-name");
+        name.setAttribute("class",card['name']+"-name");
+        name.textContent = card['name'];
+        let coin = nameCoinDiv.querySelector(".coin");
+        coin.childNodes[1] = card['Price'];
+
+        tempNode.removeAttribute("style");
+        tempNode.removeAttribute("data-type");
+        tempNode.setAttribute("class", card['name']);
+        tempNode.style.background = 'url('+card['URL']+')';
+        tempNode.style.backgroundRepeat = "no-repeat";
+        tempNode.style.backgroundSize = "cover";
+
+        currentCard.appendChild(tempNode);
+    }
+}
 
 

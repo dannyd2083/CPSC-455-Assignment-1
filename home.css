@@ -61,7 +61,7 @@ body{
     grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
     grid-auto-rows: minmax(200px, auto);
     grid-gap: 1em;
-
+    background-size: cover;
 }
 
 .current-card-div *{
@@ -72,19 +72,6 @@ body{
     justify-content: flex-end;
     font-size: 1.3rem;
     background-size: cover;
-}
-
-.aatrox{
-    background-image: linear-gradient(
-    to bottom, transparent, #404040
-    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/aatrox.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.3rem;*/
-    /*background-size: cover;*/
 }
 
 .traits {
@@ -110,160 +97,6 @@ body{
     display: flex;
     flex-direction: row;
     font-size: 1.4rem;
-}
-
-
-.gragas{
-    background-image:linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/gragas.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.leona{
-    background-image:linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/leona.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-.kalista{
-    background-image: linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/kalista.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.khazix {
-    background-image: linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/khazix.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.kled{
-    background-image:  linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/kled.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-.lissandra{
-    background-image: linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/lissandra.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-.poppy{
-    background-image: linear-gradient(
-            to bottom, transparent, #404040
-    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/poppy.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.udyr{
-    background-image: linear-gradient(
-            to bottom, transparent, #404040
-    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/udyr.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.vayne{
-    background-image: linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vayne.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.warwick{
-    background-image: linear-gradient(
-            to bottom, transparent, #404040
-    ),url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/warwick.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.ziggs{
-    background-image:linear-gradient(
-            to bottom, transparent, #404040
-    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/ziggs.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
-}
-
-.vladimir{
-    background-image:linear-gradient(
-            to bottom, transparent, #404040
-    ), url("https://fastcdn.mobalytics.gg/assets/tft/images/champions/thumbnail/set5/vladimir.jpg");
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*position: relative;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*font-size: 1.6rem;*/
-    /*background-size: cover;*/
 }
 
 .addCard-div{
@@ -309,6 +142,11 @@ input[type=submit],input[type=reset],input[type=button]{
 }
 
 #DeleteAll:hover{
+    background: white;
+    color:mediumseagreen;
+}
+
+#Reload:hover{
     background: white;
     color:mediumseagreen;
 }

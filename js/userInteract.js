@@ -7,7 +7,7 @@ console.log(form);
 
 if (form) {
     form.addEventListener('submit', function (event) {
-        event.preventDefault() //prevents the form from autosubmitting
+        event.preventDefault(); //prevents the form from autosubmitting
         cardAddedName = document.getElementById('Name').value;
         console.log(cardAddedName);
         cardAddedPrice = document.getElementById('Price').value;
@@ -19,6 +19,12 @@ if (form) {
         addCard();
     })
 }
+
+document.getElementById("DeleteAll").addEventListener("click", function() {
+    let currentCard = document.getElementById("current-card-list");
+    currentCard.innerHTML = '';
+});
+
 
 function addCard (){
     console.log("hello this is add card function!");
@@ -57,9 +63,15 @@ function addCard (){
     tempNode.removeAttribute("style");
     tempNode.removeAttribute("data-type");
     tempNode.setAttribute("class", cardAddedName);
+    tempNode.style.background = 'url('+cardAddedURL+')';
+    tempNode.style.backgroundRepeat = "no-repeat";
+    tempNode.style.backgroundSize = "cover";
 
     console.log(tempNode);
 
     currentCard.appendChild(tempNode);
-
 }
+
+
+
+
